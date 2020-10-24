@@ -33,6 +33,6 @@ resource "aws_security_group" "SG1" {
 	}
 
 	tags = {
-		Name = "tuts security group"
+		Name = "security group"
 	}
 }
