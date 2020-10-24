@@ -1,3 +1,9 @@
+provider "aws" {
+
+  access_key = "access-key"
+  secret_key = "secret-key"
+  region     = "us-east-1"
+}
 
 locals {
   instance_ids= concat(aws_instance.app.*.id , aws_instance.db.*.id)
